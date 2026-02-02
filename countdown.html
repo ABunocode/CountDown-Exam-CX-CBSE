@@ -59,7 +59,7 @@
 
     <div class="footer">
       <div class="pill" id="targetText">Target: --</div>
-      <div class="pill"> All the Best! /div>
+      <div class="pill"> All the Best! --</div>
     </div>
   </div>
 
@@ -77,7 +77,8 @@
     const targetText = document.getElementById("targetText");
 
     const target = new Date(TARGET_IST);
-     targetText.textContent = "Target: " + target.toLocaleString("en-IN", { timeZone: "Asia/Kolkata" }) + " IST";
+     //targetText.textContent = "Target: " + target.toLocaleString("en-IN", { timeZone: "Asia/Kolkata" }) + " IST";
+      targetText.textContent = "Target: " + target.toLocaleString("en-IN",) + " IST";
 
     function pad(n) { return String(n).padStart(2, "0"); }
 
@@ -118,6 +119,7 @@
   </script>
 </body>
 </html>
+
 
 
 
