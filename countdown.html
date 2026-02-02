@@ -77,8 +77,8 @@
     const targetText = document.getElementById("targetText");
 
     const target = new Date(TARGET_IST);
-     //targetText.textContent = "Target: " + target.toLocaleString("en-IN", { timeZone: "Asia/Kolkata" }) + " IST";
-      targetText.textContent = "Target: " + target.toLocaleString("en-IN",) + " IST";
+     targetText.textContent = "Target: " + target.toLocaleString("en-IN", { timeZone: "Asia/Kolkata" }) + " IST";
+     // targetText.textContent = "Target: " + target.toLocaleString("en-IN",) + " IST";
 
     function pad(n) { return String(n).padStart(2, "0"); }
 
@@ -119,6 +119,7 @@
   </script>
 </body>
 </html>
+
 
 
 
